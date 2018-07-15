@@ -14,6 +14,8 @@ header {
 }
 
 
+
+
 .main-flex {
 	display: flex;
 }
@@ -40,6 +42,10 @@ header {
 	color: white;
 	height: 33.33vh;
 	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 /*Blocks*/
@@ -52,60 +58,44 @@ header {
 }
 
 .block2 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #8D99AE;
 }
 
 .block3 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #000000;
 }
 
 .block4 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #8D99AE;
 }
 
 .block5 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #0ABAB5;
 }
 
 .block6 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #F72A2A;
 }
 
 .block7 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #000000;
 }
 
 .block8 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #F72A2A;
 }
 
 
+.header-icons {
+	background-image: url("Icons/003-info.svg")
+	width: 1rem;
+}
 
 
-
-
-
+.icon {
+	height: 4rem;
+	margin-bottom: 0.5rem;
+}
 
 
 
