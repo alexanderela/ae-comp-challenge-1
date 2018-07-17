@@ -1,0 +1,191 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	font-family: 'Nunito', sans-serif;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	width: 75%;
+	margin: 1.5rem 1.25rem;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 1.25rem;
+}
+
+.description {
+	font-weight: 300;
+	font-size: 0.75rem;
+	margin: 1rem 0 0.25rem;
+	line-height: 1.25rem;
+}
+
+section {
+	font-weight: 400;
+	font-size: 0.75rem;
+}
+
+button {
+	font-weight: 400;
+	font-size: 0.75rem;
+	background: transparent;
+	border: 0.1rem solid #FFFFFF;
+	color: #FFFFFF;
+  margin: 0.5rem 1rem 0 0;
+  padding: 0.6rem 1rem;
+}
+
+.header-button-text {
+	padding-left: 0.1rem;
+	display: inline;
+}
+
+.main-flex {
+	display: flex;
+}
+
+.side-left-main {
+	width: 60%;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.side-right-main {
+	background-image: url("Images/ronaldo.jpg");
+	background-size: cover;
+	width: 40%;
+	height: 100vh;
+	display: inline-block;
+}
+
+
+.block-general {
+	background-color: red;
+	color: white;
+	height: 33.33vh;
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/*Blocks*/
+
+.block1 {
+	background-color: #0ABAB5;
+	color: white;
+	height: 33.33vh;
+	width: 66.66%;
+}
+
+.block2 {
+	background-color: #8D99AE;
+}
+
+.block3 {
+	background-color: #000000;
+}
+
+.block4 {
+	background-color: #8D99AE;
+}
+
+.block5 {
+	background-color: #0ABAB5;
+}
+
+.block6 {
+	background-color: #F72A2A;
+}
+
+.block7 {
+	background-color: #000000;
+}
+
+.block8 {
+	background-color: #F72A2A;
+}
+
+
+.header-icons {
+	width: 0.75rem;
+}
+
+
+.icon {
+	height: 4rem;
+	margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 768px) {
+
+.side-right-main {
+	flex-direction: column-reverse;
+	background-position: 32%;
+}
+
+.block-general {
+	height: 20vh;
+	width: 50%;
+}
+
+.block1 {
+	width: 100%;
+	height: 25vh;
+}
+
+.block8 {
+	width: 100%;
+	height: 15vh;
+}
+
+}
+
+
+@media screen and (max-width: 320px) {
+.main-flex {
+	flex-direction: column;
+	width: 100%;
+}
+
+.side-left-main {
+	flex-direction: column;
+	width: 100%;
+	flex-wrap: nowrap;
+}
+
+.side-right-main {
+	width: 100%;
+	height: 100vh;
+	background-position: -3%;
+}
+
+.block-general {
+	height: 20vh;
+	width: 100%;
+}
+
+.block1 {
+	width: 100%;
+	height: 45vh;
+}
+
+}
