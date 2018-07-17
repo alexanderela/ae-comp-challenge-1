@@ -1,42 +1,73 @@
+/*General Layout*/
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	width: 100%;
 	font-family: 'Nunito', sans-serif;
+	width: 100%;
+}
+
+.main-flex {
+	display: flex;
+}
+
+.block-general {
+	align-items: center;
+	background-color: red;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	font-size: 1rem;
+	font-weight: 600;
+	height: 33.33vh;
+	justify-content: center;
+	width: 33.33%;
+}
+
+
+/*//Left Side of Page*/
+
+.side-left-main {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	width: 60%;
+}
+
+.block1 {
+	background-color: #0ABAB5;
+	color: white;
+	height: 33.33vh;
+	width: 66.66%;
 }
 
 header {
 	display: flex;
 	flex-wrap: wrap;
-	width: 75%;
 	margin: 2.5rem 1.25rem;
+	width: 75%;
 }
 
 h1 {
-	font-weight: 700;
 	font-size: 2rem;
+	font-weight: 700;
 }
 
 .description {
 	font-weight: 300;
 	font-size: 1rem;
-	margin: 1rem 0 0.25rem;
 	line-height: 1.5rem;
-}
-
-section {
-	font-weight: 400;
-	font-size: 0.75rem;
+	margin: 1rem 0 0.25rem;
 }
 
 button {
-	font-weight: 400;
-	font-size: 1rem;
 	background: transparent;
 	border: 0.1rem solid #FFFFFF;
 	color: #FFFFFF;
+	font-weight: 400;
+	font-size: 1rem;
   margin: 0.5rem 1rem 0 0;
   padding: 0.6rem 1rem;
 }
@@ -44,68 +75,6 @@ button {
 .header-button-text {
 	padding-left: 0.1rem;
 	display: inline;
-}
-
-.main-flex {
-	display: flex;
-}
-
-.side-left-main {
-	width: 60%;
-	height: 100vh;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-
-.side-right-main {
-	background-image: url("Images/ronaldo.jpg");
-	background-size: cover;
-	background-position: top center;
-	width: 40%;
-	height: 100vh;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-
-.image-markers {
-	width: 3rem;
-	align-self: flex-start;
-	position: absolute;
-  right: 1rem;
-  top: -0.2rem;
-}
-
-.left-right-arrows {
-	width: 3rem;
-	margin: 0.5rem;
-}
-
-
-.block-general {
-	background-color: red;
-	color: white;
-	height: 33.33vh;
-	width: 33.33%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-size: 1rem;
-	font-weight: 600;
-}
-
-
-
-/*Blocks*/
-
-.block1 {
-	background-color: #0ABAB5;
-	color: white;
-	height: 33.33vh;
-	width: 66.66%;
 }
 
 .block2 {
@@ -136,11 +105,9 @@ button {
 	background-color: #F72A2A;
 }
 
-
 .header-icons {
 	width: 0.75rem;
 }
-
 
 .icon {
 	height: 4rem;
@@ -149,33 +116,66 @@ button {
 
 
 
+/*//Right Side of Page*/
+
+.side-right-main {
+	align-items: center;
+	background-image: url("Images/ronaldo.jpg");
+	background-position: top center;
+	background-size: cover;
+	display: flex;
+	height: 100vh;
+	justify-content: space-between;
+	width: 40%;
+}
+
+
+.image-markers {
+	align-self: flex-start;
+	position: absolute;
+  right: 1rem;
+  top: -0.2rem;
+	width: 3rem;
+}
+
+.left-right-arrows {
+	margin: 0.5rem;
+	width: 3rem;
+}
 
 
 
 /*Media Queries*/
 @media screen and (max-width: 1145px) {
+
+.block-general {
+	font-size: 0.75rem;
+}
+
 h1 {
 
 	font-size: 1.5rem;
 }
 
-.block-general {
-	font-size: 0.75rem;
+.image-markers {
+	width: 2.5rem;
 }
 
 .icon {
 	height: 3.5rem;
 }
 
-.image-markers {
-	width: 2.5rem;
-}
 }
 
 @media screen and (max-width: 940px) {
 
-h1 {
+.block-general {
+	font-size: 0.65rem;
+	height: 20vh;
+	width: 50%;
+}
 
+h1 {
 	font-size: 1.25rem;
 }
 
@@ -184,33 +184,29 @@ h1 {
 	line-height: 1.2rem;
 	margin: 0.75rem 0 0.25rem;
 }
+
 button {
 	font-size: 0.75rem;
   padding: 0.5rem 1rem;
 }
 
-.side-right-main {
-	background-position: 32%;
-}
-
-.block-general {
-	height: 20vh;
-	width: 50%;
-	font-size: 0.65rem;
-}
-
 .block1 {
-	width: 100%;
 	height: 25vh;
 	min-height: 155px;
+	width: 100%;
 }
 
 .block8 {
-	width: 100%;
 	height: 15vh;
+	width: 100%;
 }
+
 .icon {
 	height: 3rem;
+}
+
+.side-right-main {
+	background-position: 32%;
 }
 
 .image-markers {
@@ -220,8 +216,12 @@ button {
 }
 
 @media screen and (max-width: 707px) {
-h1 {
 
+.block-general {
+	font-size: 0.55rem;
+}
+
+h1 {
 	font-size: 1.05rem;
 }
 
@@ -234,10 +234,6 @@ button {
 	font-size: 0.6rem;
 }
 
-.block-general {
-	font-size: 0.55rem;
-}
-
 .icon {
 	height: 2.5rem;
 }
@@ -245,6 +241,10 @@ button {
 }
 
 @media screen and (max-width: 566px) {
+
+.block-general {
+	font-size: 0.4rem;
+}
 
 .description {
 	font-size: 0.5rem;
@@ -257,15 +257,29 @@ button {
   padding: 0.5rem 1rem;
 }
 
-.block-general {
-	font-size: 0.4rem;
-
-}
 
 }
 
 
 @media screen and (max-width: 450px) {
+
+.main-flex {
+	flex-direction: column;
+	width: 100%;
+}
+
+.block-general {
+	font-size: 0.7rem;
+	height: 7rem;
+	width: 100%;
+}
+
+.side-left-main {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	height: 100%;
+	width: 100%;
+}
 
 h1 {
 
@@ -279,37 +293,12 @@ h1 {
 button {
 	font-size: 0.7rem;
 	margin: 0.25rem 0.75rem 0 0;
-   padding: 0.5rem 0.75rem;
-}
-
-.main-flex {
-	flex-direction: column;
-	width: 100%;
-}
-
-.side-left-main {
-	flex-direction: column;
-	width: 100%;
-	flex-wrap: nowrap;
-	height: 100%;
-}
-
-.side-right-main {
-	width: 100%;
-	height: 100vh;
-/*	background-position: -3%;*/
-}
-
-.block-general {
-	height: 7rem;
-	width: 100%;
-	font-size: 0.7rem;
-
+  padding: 0.5rem 0.75rem;
 }
 
 .block1 {
-	width: 100%;
 	min-height: 177px;
+	width: 100%;
 }
 
 .icon {
@@ -317,9 +306,14 @@ button {
 	margin-bottom: 0.25rem;
 }
 
+.side-right-main {
+	height: 100vh;
+	width: 100%;
+}
+
 .image-markers {
-	width: 2rem;
 	top: 60rem;
+	width: 2rem;
 }
 
 }
